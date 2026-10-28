@@ -1,0 +1,35 @@
+digraph A {
+graph [rankdir=LR, fontname="DejaVu Sans", bgcolor=white, nodesep=0.25, ranksep=0.35];
+node [shape=circle, fontname="DejaVu Sans", fontsize=11, width=0.35, fixedsize=true, style=filled, fillcolor="#EEEDFE", color="#534AB7"];
+edge [fontname="DejaVu Sans", fontsize=13, color="#5F5E5A", arrowsize=0.6];
+__start [shape=point, width=0.05, style=invis];
+
+label="Минимальный ДКА: общие окончания склеены"; labelloc=t; fontsize=16;
+0 [label="0"];
+1 [label="1"];
+10 [label="10"];
+2 [label="2"];
+3 [label="3"];
+4 [label="4"];
+6 [label="6"];
+7 [label="7", shape=doublecircle, fillcolor="#E1F5EE", color="#0F6E56"];
+5 [label="5", shape=doublecircle, fillcolor="#E1F5EE", color="#0F6E56"];
+9 [label="9"];
+8 [label="8", shape=doublecircle, fillcolor="#E1F5EE", color="#0F6E56"];
+__start -> 0;
+0 -> 1 [label="к"];
+0 -> 10 [label="м"];
+1 -> 2 [label="о"];
+10 -> 2 [label="ы"];
+2 -> 3 [label="ш"];
+3 -> 4 [label="е"];
+3 -> 6 [label="к"];
+4 -> 5 [label="к"];
+6 -> 7 [label="а"];
+6 -> 5 [label="е,и,у"];
+6 -> 9 [label="о"];
+7 -> 8 [label="м"];
+7 -> 5 [label="х"];
+9 -> 5 [label="й,ю"];
+8 -> 5 [label="и"];
+}
