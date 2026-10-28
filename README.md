@@ -11,7 +11,7 @@ pip install pymorphy3 torch matplotlib
 
 ```
 python demo.py --step              # всё демо по шагам (Enter между шагами)
-python demo.py мыла кружками       # разобрать свои слова мини-анализатором
+python demo.py мыла кружками       # разобрать свои слова мини-анализатором(используются только автоматы)
 
 cd neural
 python analyzer.py зумеров загуглила            # гибридный анализатор
